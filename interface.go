@@ -11,6 +11,36 @@ func GetDeviceId(index uint) (string, error) {
 	return C.GoString(s), err
 }
 
+func GetDevicePhysicalId(index uint) (string, error) {
+	s, err := C.arv_get_device_physical_id(C.uint(index))
+	return C.GoString(s), err
+}
+
+func GetDeviceModel(index uint) (string, error) {
+	s, err := C.arv_get_device_model(C.uint(index))
+	return C.GoString(s), err
+}
+
+func GetDeviceSerialNbr(index uint) (string, error) {
+	s, err := C.arv_get_device_serial_nbr(C.uint(index))
+	return C.GoString(s), err
+}
+
+func GetDeviceVendor(index uint) (string, error) {
+	s, err := C.arv_get_device_vendor(C.uint(index))
+	return C.GoString(s), err
+}
+
+func GetDeviceAddress(index uint) (string, error) {
+	s, err := C.arv_get_device_address(C.uint(index))
+	return C.GoString(s), err
+}
+
+func GetDeviceProtocol(index uint) (string, error) {
+	s, err := C.arv_get_device_protocol(C.uint(index))
+	return C.GoString(s), err
+}
+
 func GetInterfaceId(index uint) (string, error) {
 	s, err := C.arv_get_interface_id(C.uint(index))
 	return C.GoString(s), err
