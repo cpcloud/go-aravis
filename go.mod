@@ -1,3 +1,3 @@
-module github.com/thinkski/go-aravis
+module github.com/cpcloud/go-aravis
 
 go 1.14
