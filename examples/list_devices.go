@@ -2,8 +2,7 @@ package main
 
 import (
 	"log"
-
-	aravis "github.com/thinkski/go-aravis"
+	aravis "github.com/cpcloud/go-aravis"
 )
 
 func main() {
